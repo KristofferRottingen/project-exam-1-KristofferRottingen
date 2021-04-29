@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact | FoodBlog</title>
+        <meta name="description" content="Rainydays website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script
+          src="https://kit.fontawesome.com/65aaf5acf6.js"
+          crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img class="logo" src="images/foodblof_logo.png" alt="FoodBlog Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="contact_content">
+                <form id="contact-form">
+                    <h1>CONTACT US</h1>
+                    <div>
+                        <label>
+                            Name (minimum 5 characters)
+                            <input name="name" id="name" />
+                        </label>
+                        <div class="error-contactForm" id="nameError">Your name is missing</div>
+                    </div>
+        
+                    <div>
+                        <label>
+                            Email (required)
+                            <input name="email" id="email" />
+                        </label>
+                        <div class="error-contactForm" id="emailError">This is not a valid email</div>
+                    </div>
+
+                    <div>
+                        <label>
+                            Subject (minimum 15 characters)
+                            <input name="subject" id="subject" />
+                        </label>
+                        <div class="error-contactForm" id="subjectError">This field is required</div>
+                    </div>
+        
+                    <div>
+                        <label class="message">
+                            Massage (minimum 25 characters)
+                            <input name="adresse" id="adresse" />
+                        </label>
+                        <div class="error-contactForm" id="adresseError">This section is required</div>
+                    </div>
+                    <button>SEND</button>
+            </form>
+            <div class="contact_text">
+                <img src="images/contact_info.jpg" alt="Picture of some food">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                    erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur
+                    sadipscing elitr.</p>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="socials">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="copyright">
+            2021 &COPY; | Kristoffer Rottingen 
+            </div>
+        </footer>
+    </body>
+</html>
