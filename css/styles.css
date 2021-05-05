@@ -1,8 +1,9 @@
 :root {
-  --font: ;
+  --font: "Roboto", sans-serif;
   --yellow: #f1ae4c;
   --footer: #e3e3e3;
   --green: #14934f;
+  --heading_font: "Girassol", cursive;
 }
 
 body {
@@ -41,10 +42,29 @@ header {
 }
 
 .head_links a {
+  font-family: var(--font);
   text-decoration: none;
   font-size: 18px;
   color: white;
   text-shadow: 1px 1px 1px #000000;
+}
+
+.head_links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.head_links a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.current {
+  font-weight: bold;
 }
 /* Header */
 
@@ -70,9 +90,24 @@ footer {
 }
 
 .fot_links a {
+  font-family: var(--font);
   text-decoration: none;
   font-size: 18px;
   color: #000000;
+}
+
+.fot_links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.fot_links a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 /* Footer */
 
@@ -94,22 +129,26 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
 }
 
 .fp_heading h1 {
+  font-family: var(--heading_font);
   color: white;
   text-shadow: 1px 1px 1px #000000;
 }
 
 .fp_heading button {
+  font-family: var(--font);
   background-color: var(--yellow);
   text-decoration: none;
   color: white;
   text-shadow: 1px 1px 1px #000000;
-  width: 100px;
+  width: 150px;
   padding: 15px 10px;
   border: none;
   font-size: 14px;
+  margin: 0;
 }
 /* main on Homepage */
 
@@ -121,7 +160,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)),
-    url(/images/contact_bg.jpg);
+    url(/images/ingred-bg.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -130,6 +169,7 @@ footer {
 }
 
 .contact_content {
+  font-family: var(--font);
   padding: 20px;
   display: flex;
   background-color: rgba(0, 0, 0, 0.7);
@@ -212,3 +252,53 @@ label {
   padding-top: 20px;
 }
 /* contact page */
+
+/* about page */
+.about_bg {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055)),
+    url(/images/about_bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 90vh;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+}
+
+.about_content h1 {
+  font-family: var(--font);
+  color: white;
+}
+
+.info_about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info_about img {
+  width: 350px;
+}
+
+.about_text {
+  font-family: var(--font);
+  padding-left: 20px;
+  color: white;
+  line-height: 30px;
+  width: 60%;
+  font-size: 16px;
+}
+
+/* about page */
