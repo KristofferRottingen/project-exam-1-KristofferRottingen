@@ -1,6 +1,7 @@
 :root {
   --font: "Roboto", sans-serif;
   --yellow: #f1ae4c;
+  --brown: #5a2a20;
   --footer: #e3e3e3;
   --green: #14934f;
   --heading_font: "Girassol", cursive;
@@ -12,7 +13,6 @@ body {
 }
 
 /* Header */
-
 header {
   display: flex;
   flex-direction: column;
@@ -112,7 +112,6 @@ footer {
 /* Footer */
 
 /* main on Homepage */
-
 .frontpage {
   background-image: url("/images/Background.jpg");
   display: flex;
@@ -151,6 +150,132 @@ footer {
   margin: 0;
 }
 /* main on Homepage */
+
+/* carousel glider */
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: var(--yellow);
+  padding: 0;
+}
+
+.container h2 {
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.carousel {
+  height: 400px;
+  overflow: hidden;
+}
+
+.latest_posts {
+  height: 100%;
+  display: flex;
+  width: 400%;
+  transition: all 0.3s;
+}
+
+.latest_posts section {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_arrows .arrow {
+  position: absolute;
+  top: 123%;
+  cursor: pointer;
+}
+
+.nav_arrows .arrow i {
+  font-size: 35px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000000;
+  transition: all 0.3s;
+}
+
+.nav_arrows .arrow i:hover {
+  text-shadow: 1px 1px 5px #000000;
+  transition: all 0.3s;
+}
+
+.arrow.left {
+  left: 6%;
+}
+
+.arrow.right {
+  right: 6%;
+}
+
+.nav_arrows ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 148%;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+}
+
+.nav_arrows ul li {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  margin: 10px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000;
+}
+
+.nav_arrows ul li.chosen {
+  background: transparent;
+}
+
+.post_card {
+  text-decoration: none;
+  background-color: var(--brown);
+  color: #fff;
+  width: 342px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 3px #000000;
+  transition: all 0.3s;
+}
+
+.post_card:hover {
+  box-shadow: 0px 0px 16px #000000;
+  transition: all 0.3s;
+}
+
+.post_card img {
+  width: 100%;
+  height: 100%;
+}
+
+.post_card h3 {
+  font-family: var(--font);
+  margin: 15px 0px;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.post_card p {
+  margin-top: 0;
+  text-shadow: 1px 1px 1px #000000;
+  font-family: var(--font);
+}
+
+/* carousel glider */
 
 /* contact page */
 
