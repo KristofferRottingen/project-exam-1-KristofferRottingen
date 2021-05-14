@@ -12,7 +12,10 @@ async function getApi(){
 
         const data = await res.json();
 
-        console.log(data);
+        createpost(data);
+
+    
+        
     } catch(error) {
         console.log(error);
     }
@@ -20,20 +23,43 @@ async function getApi(){
 
 getApi();
 
-function getPosts(result) {
-    for(let i = 0; i < result.length; i++)  {
-
+function createpost(data) {
+    for(let i = 0; i < data.length; i++)  {
+   
         if (i = 4) {
             break;
         }
     }
-
-    sectionOne.innerHTML = `<a href="post.html?id=${result[0].id}" class="post_card">
-                                <img src="${result[0].content.redered.img}" alt="burger">
-                                <h3>The American burger</h3>
+    sectionOne.innerHTML += `<a href="post.html?id=${data[0].id}" class="post_card">
+                                <img src="${data[0].acf.main_image}" alt="burger">
+                                <h3>${data[0].acf.title}</h3>
                                 <p>10/04/2021</p>
-                            </a>`
+    </a>`;
+
+    sectionTwo.innerHTML += `<a href="post.html?id=${data[1].id}" class="post_card">
+                            <img src="${data[1].acf.main_image}" alt="burger">
+                            <h3>${data[1].acf.title}</h3>
+                            <p>10/04/2021</p>
+    </a>`;
+    
+    sectionThree.innerHTML += `<a href="post.html?id=${data[2].id}" class="post_card">
+                                <img src="${data[2].acf.main_image}" alt="burger">
+                                <h3>${data[2].acf.title}</h3>
+                                <p>10/04/2021</p>
+    </a>`;
+
+    sectionFour.innerHTML += `<a href="post.html?id=${data[3].id}" class="post_card">
+                                <img src="${data[3].acf.main_image}" alt="burger">
+                                <h3>${data[3].acf.title}</h3>
+                                <p>10/04/2021</p>
+    </a>`;
+
+
 }
+
+
+
+
 
 
 /* Carousel glider-----> */

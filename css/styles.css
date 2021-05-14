@@ -189,7 +189,7 @@ footer {
 
 .nav_arrows .arrow {
   position: absolute;
-  top: 123%;
+  top: 111%;
   cursor: pointer;
 }
 
@@ -217,7 +217,7 @@ footer {
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 148%;
+  top: 131%;
   left: 50%;
   transform: translate(-50%);
   list-style: none;
