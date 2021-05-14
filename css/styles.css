@@ -147,7 +147,7 @@ footer {
 .fp_heading h1 {
   font-family: var(--heading_font);
   color: white;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 10px #000000;
 }
 
 .hp_button {
