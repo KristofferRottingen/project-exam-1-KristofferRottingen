@@ -4,6 +4,7 @@ const sectionTwo = document.querySelector(".sec2");
 const sectionThree = document.querySelector(".sec3");
 const sectionFour = document.querySelector(".sec4");
 
+
 const url = "http://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts";
 
 async function getApi(){
@@ -23,36 +24,62 @@ async function getApi(){
 
 getApi();
 
+
+
 function createpost(data) {
     for(let i = 0; i < data.length; i++)  {
    
-        if (i = 4) {
+        if (i = 8) {
             break;
         }
     }
-    sectionOne.innerHTML += `<a href="post.html?id=${data[0].id}" class="post_card">
+    sectionOne.innerHTML += `<div class="sec_content1"><a href="post.html?id=${data[0].id}" class="post_card">
                                 <img src="${data[0].acf.main_image}" alt="burger">
                                 <h3>${data[0].acf.title}</h3>
-                                <p>10/04/2021</p>
-    </a>`;
-
-    sectionTwo.innerHTML += `<a href="post.html?id=${data[1].id}" class="post_card">
+                                <p>${data[0].acf.post_dato}</p>
+    </a></div>
+    
+    <div class="sec_content2"><a href="post.html?id=${data[1].id}" class="post_card">
                             <img src="${data[1].acf.main_image}" alt="burger">
                             <h3>${data[1].acf.title}</h3>
-                            <p>10/04/2021</p>
-    </a>`;
+                            <p>${data[1].acf.post_dato}</p>
+    </a></div>`;
     
-    sectionThree.innerHTML += `<a href="post.html?id=${data[2].id}" class="post_card">
+    sectionTwo.innerHTML += `<div class="sec_content3"><a href="post.html?id=${data[2].id}" class="post_card">
                                 <img src="${data[2].acf.main_image}" alt="burger">
                                 <h3>${data[2].acf.title}</h3>
-                                <p>10/04/2021</p>
-    </a>`;
-
-    sectionFour.innerHTML += `<a href="post.html?id=${data[3].id}" class="post_card">
+                                <p>${data[2].acf.post_dato}</p>
+    </a></div>
+    
+    <div class="sec_content4"><a href="post.html?id=${data[3].id}" class="post_card">
                                 <img src="${data[3].acf.main_image}" alt="burger">
                                 <h3>${data[3].acf.title}</h3>
-                                <p>10/04/2021</p>
-    </a>`;
+                                <p>${data[3].acf.post_dato}</p>
+    </a></div>`;
+
+    sectionThree.innerHTML += `<div class="sec_content5"><a href="post.html?id=${data[4].id}" class="post_card">
+                                <img src="${data[4].acf.main_image}" alt="burger">
+                                <h3>${data[4].acf.title}</h3>
+                                <p>${data[4].acf.post_dato}</p>
+    </a></div>
+    
+    <div class="sec_content6"><a href="post.html?id=${data[5].id}" class="post_card">
+                                <img src="${data[5].acf.main_image}" alt="burger">
+                                <h3>${data[5].acf.title}</h3>
+                                <p>${data[5].acf.post_dato}</p>
+    </a></div>`;
+
+    sectionFour.innerHTML += `<div class="sec_content7"><a href="post.html?id=${data[6].id}" class="post_card">
+                                <img src="${data[6].acf.main_image}" alt="burger">
+                                <h3>${data[6].acf.title}</h3>
+                                <p>${data[6].acf.post_dato}</p>
+    </a></div>
+    
+    <div class="sec_content8"><a href="post.html?id=${data[7].id}" class="post_card">
+                                <img src="${data[7].acf.main_image}" alt="burger">
+                                <h3>${data[7].acf.title}</h3>
+                                <p>${data[7].acf.post_dato}</p>
+    </a></div>`;
 
 
 }
