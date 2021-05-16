@@ -4,16 +4,12 @@ const sectionTwo = document.querySelector(".sec2");
 const sectionThree = document.querySelector(".sec3");
 const sectionFour = document.querySelector(".sec4");
 
-const proxy = "https://noroffcors.herokuapp.com/";
-
 const url = "https://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts";
-
-const cors = proxy + url;
 
 
 async function getApi(){
     try {
-        const res = await fetch(cors);
+        const res = await fetch(url);
 
         const data = await res.json();
 

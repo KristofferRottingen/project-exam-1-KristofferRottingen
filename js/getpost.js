@@ -1,14 +1,10 @@
-const proxy = "https://noroffcors.herokuapp.com/";
-
 const url = "https://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts";
-
-const cors = proxy + url;
 
 const allPosts = document.querySelector(".all_posts");
 
 async function getAllPosts(){
     try {
-        const response = await fetch(cors);
+        const response = await fetch(url);
 
         const result = await response.json();
 
