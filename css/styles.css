@@ -501,7 +501,7 @@ label {
 }
 
 .grid_post_card {
-  margin: 0px 20px;
+  margin: 10px 20px;
   text-decoration: none;
   background-color: var(--yellow);
   color: #fff;
@@ -521,7 +521,7 @@ label {
 }
 
 .grid_post_card img {
-  width: 100%;
+  width: 342px;
   height: 100%;
 }
 
