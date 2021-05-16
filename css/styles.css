@@ -222,7 +222,7 @@ footer {
 
 .nav_arrows .arrow {
   position: absolute;
-  padding-top: 150px;
+  bottom: -180px;
   cursor: pointer;
 }
 
@@ -250,7 +250,7 @@ footer {
   padding: 0;
   margin: 0;
   position: absolute;
-  padding-top: 340px;
+  bottom: -400px;
   left: 50%;
   transform: translateX(-50%);
   list-style: none;
@@ -501,7 +501,7 @@ label {
 }
 
 .grid_post_card {
-  margin: 10px 20px;
+  margin: 0px 20px;
   text-decoration: none;
   background-color: var(--yellow);
   color: #fff;
@@ -541,12 +541,6 @@ label {
 /* media quieres ----> */
 @media (maw-width: 1200px) {
   .body {
-  }
-}
-
-@media (max-height: 770px) {
-  .nav_arrows .arrow {
-    top: auto;
   }
 }
 /* media quieres ----> */
