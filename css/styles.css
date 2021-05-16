@@ -222,7 +222,7 @@ footer {
 
 .nav_arrows .arrow {
   position: absolute;
-  top: 124%;
+  padding-top: 150px;
   cursor: pointer;
 }
 
@@ -250,7 +250,7 @@ footer {
   padding: 0;
   margin: 0;
   position: absolute;
-  bottom: -56%;
+  padding-top: 340px;
   left: 50%;
   transform: translateX(-50%);
   list-style: none;
@@ -463,6 +463,10 @@ label {
 /* about page */
 
 /* blog page */
+.blog_grid {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .blog_bp {
   padding: 40px;
@@ -497,12 +501,12 @@ label {
 }
 
 .grid_post_card {
-  margin: 0px 20px;
+  margin: 10px 20px;
   text-decoration: none;
   background-color: var(--yellow);
   color: #fff;
-  width: 90%;
-  height: 90%;
+  max-width: 400px;
+  max-height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -537,6 +541,12 @@ label {
 /* media quieres ----> */
 @media (maw-width: 1200px) {
   .body {
+  }
+}
+
+@media (max-height: 770px) {
+  .nav_arrows .arrow {
+    top: auto;
   }
 }
 /* media quieres ----> */
