@@ -6,7 +6,7 @@ const sectionFour = document.querySelector(".sec4");
 
 const proxy = "https://noroffcors.herokuapp.com/";
 
-const url = "http://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts";
+const url = "https://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts";
 
 const cors = proxy + url;
 
