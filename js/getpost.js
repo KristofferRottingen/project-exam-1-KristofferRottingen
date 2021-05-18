@@ -18,7 +18,7 @@ async function getAllPosts(){
             allPosts.innerHTML += 
             `<div class="blog_grid">
                 <a href="post.html?id=${result[i].id}" class="grid_post_card">
-                    <img src="${result[i].acf.main_image}" alt="burger">
+                    <img src="${result[i].acf.main_image}" alt="${result[i].acf.title}">
                     <h3>${result[i].acf.title}</h3>
                     <p>${result[i].acf.post_dato}</p>
                 </a>
@@ -53,7 +53,7 @@ viewMoreBtn.addEventListener("click", () => {
 
                 morePost.innerHTML += `<div class="blog_grid">
                 <a href="post.html?id=${result[i].id}" class="grid_post_card">
-                    <img src="${result[i].acf.main_image}" alt="burger">
+                    <img src="${result[i].acf.main_image}" alt="${result[i].acf.title}">
                     <h3>${result[i].acf.title}</h3>
                     <p>${result[i].acf.post_dato}</p>
                 </a>
