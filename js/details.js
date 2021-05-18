@@ -1,6 +1,7 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+const title = document.querySelector(".title");
 
 const introSection = document.querySelector(".img_intro");
 const ingredientsSection = document.querySelector(".ing_img");
@@ -22,6 +23,8 @@ async function getDetails() {
         const result = await response.json();
 
         console.log(result);
+
+        title.innerHTML += `${result.acf.title} | FoodBlog`
 
         introSection.innerHTML = `<img src="${result.acf.main_image}" alt="${result.acf.title} image">
         <h1>${result.acf.title}</h1>
