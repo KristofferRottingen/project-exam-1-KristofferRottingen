@@ -1,7 +1,7 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const title = document.querySelector(".title");
+const title = document.querySelector("title");
 
 const introSection = document.querySelector(".img_intro");
 const ingredientsSection = document.querySelector(".ing_img");
