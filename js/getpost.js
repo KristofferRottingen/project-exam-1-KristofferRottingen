@@ -15,6 +15,8 @@ async function getAllPosts(){
         for(let i = 0; i < 8; i++)  {
             console.log(result[i].id);
             
+            morePost.style.display = "none";
+
             allPosts.innerHTML += 
             `<div class="blog_grid">
                 <a href="post.html?id=${result[i].id}" class="grid_post_card">
@@ -35,6 +37,7 @@ getAllPosts();
 /* Click event for more posts -----> */
 const viewMoreBtn = document.querySelector(".view_more_btn");
 const morePost = document.querySelector(".view_posts");
+const loader = document.querySelector(".loader");
 
 const morePostApi = "https://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts?categories=1"
 
@@ -45,6 +48,11 @@ viewMoreBtn.addEventListener("click", () => {
             const response = await fetch(morePostApi);
 
             const result = await response.json();
+            
+            morePost.style.display = "block";
+
+            morePost.innerHTML = "";
+
 
             for (let i = 0; i < result.length; i++) {
 
@@ -60,7 +68,7 @@ viewMoreBtn.addEventListener("click", () => {
             }
         } catch(error) {
             console.log(error);
-        };
+        }
     };
     Api();
 });
