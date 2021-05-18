@@ -14,8 +14,6 @@ async function getAllPosts(){
 
         for(let i = 0; i < 8; i++)  {
             console.log(result[i].id);
-            
-            morePost.style.display = "none";
 
             allPosts.innerHTML += 
             `<div class="blog_grid">
@@ -48,11 +46,6 @@ viewMoreBtn.addEventListener("click", () => {
             const response = await fetch(morePostApi);
 
             const result = await response.json();
-            
-            morePost.style.display = "block";
-
-            morePost.innerHTML = "";
-
 
             for (let i = 0; i < result.length; i++) {
 
