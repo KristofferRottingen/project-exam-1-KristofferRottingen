@@ -13,7 +13,7 @@ body {
 }
 
 /* Header */
-header {
+.basic_header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,7 @@ header {
 .logo {
   width: 300px;
   padding-top: 10px;
+  filter: drop-shadow(2px 3px 3px #000);
 }
 
 .head_links ul {
@@ -367,7 +368,7 @@ button {
   border-radius: 1rem;
   border: none;
   text-transform: uppercase;
-  box-shadow: 0px 0px 2px 5px #00000041;
+  box-shadow: 1px 1px 5px 3px #00000041;
   text-shadow: 1px 1px 1px #000000;
   margin-top: 2rem;
   transition: all 0.3s;
@@ -555,6 +556,17 @@ label {
 /* blog page */
 
 /* Post specific page ------> */
+.details_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--yellow);
+  padding: 0;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .details_bg {
   padding: 60px;
   align-items: center;
@@ -584,8 +596,82 @@ label {
   justify-content: center;
 }
 
+.img_intro .dato {
+  font-size: 14px;
+  font-family: var(--font);
+}
+
 .img_intro img {
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.img_intro h1 {
+  font-family: var(--font);
+}
+
+.img_intro .stars i {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.img_intro p {
+  font-family: var(--font);
+  font-size: 16px;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.ing_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.ing_img .ingredients h2 {
+  font-family: var(--font);
+}
+
+.ing_img .ingredients p {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: var(--font);
+  line-height: 30px;
+  max-width: 40px;
+}
+
+.ing_img .recipe_image img {
+  max-width: 300px;
+}
+
+.how_to_do {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.how_to_do h2 {
+  text-align: center;
+  font-family: var(--font);
+}
+
+.how_to_do ul li {
+  padding: 10px 0px;
+  line-height: 25px;
+  color: #fff;
+  font-family: var(--font);
+  font-size: 16px;
+}
+
+.how_to_do ul li::marker {
+  content: counter(list-item) ".";
 }
 /* Post specific page ------> */
 
