@@ -753,6 +753,12 @@ label {
   }
 }
 
+@media (max-height: 460px) {
+  .arrow {
+    bottom: -265px;
+  }
+}
+
 @media (max-width: 460px) {
   .post_card {
     width: 200px;
