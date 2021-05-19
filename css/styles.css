@@ -726,6 +726,15 @@ label {
   }
 }
 
+@media (max-width: 930px) {
+  .sec_content2,
+  .sec_content4,
+  .sec_content6,
+  .sec_content8 {
+    display: none;
+  }
+}
+
 @media (max-width: 850px) {
   /* blog page ---->*/
   .grid_post_card h3 {
@@ -738,22 +747,13 @@ label {
   /* blog page ---->*/
 }
 
-@media (max-width: 800px) {
-  .sec_content2,
-  .sec_content4,
-  .sec_content6,
-  .sec_content8 {
-    display: none;
-  }
-}
-
 @media (max-width: 550px) {
   .fp_heading h1 {
     text-align: center;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   .post_card {
     width: 200px;
   }
