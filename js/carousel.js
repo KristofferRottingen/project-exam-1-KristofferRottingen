@@ -89,8 +89,8 @@ function createpost(data) {
 
 /* Carousel glider-----> */
 const slider = document.querySelector(".latest_posts");
-const leftArrow = document.querySelector(".left");
-const rightArrow = document.querySelector(".right");
+const leftArrow = document.querySelector(".arrow.left");
+const rightArrow = document.querySelector(".arrow.right");
 const markParent = document.querySelector(".nav_arrows ul");
 
 var index = 0;
