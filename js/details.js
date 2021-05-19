@@ -51,9 +51,21 @@ async function getDetails() {
         </ul>`;
 
 
+        /* Overlay ------> */
+        const Overlay = document.querySelector(".modal_overlay");
+        const imgOverlay = document.querySelector(".img_overlay");
+        const image2 = document.querySelector(".recipe_image img")
+        const imgMain = document.querySelector(".img_intro img");
+
+        const images = image2 + imgMain;
+
+        imgOverlay.innerHTML = `<img src="${result.acf}"`
+        
 
     } catch(error) {
         console.log(error);
     }
 }
 getDetails();
+
+/* Overlay ------> */
