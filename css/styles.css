@@ -684,6 +684,18 @@ label {
 /* Post specific page ------> */
 
 /* media quieres ----> */
+@media (min-height: 1100px) {
+  .arrow {
+    bottom: -125px;
+  }
+}
+
+@media (min-height: 1300px) {
+  .arrow {
+    bottom: -50px;
+  }
+}
+
 @media (min-width: 1500px) {
   body {
     margin-left: 100px;
