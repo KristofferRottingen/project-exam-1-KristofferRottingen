@@ -14,8 +14,6 @@ async function getApi(){
         const data = await res.json();
 
         createpost(data);
-
-    
         
     } catch(error) {
         console.log(error);
