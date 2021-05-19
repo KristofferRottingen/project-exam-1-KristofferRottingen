@@ -726,20 +726,6 @@ label {
   }
 }
 
-@media (max-width: 950px) {
-  .post_card {
-    width: 280px;
-  }
-
-  .post_card h3 {
-    font-size: 16px;
-  }
-
-  .post_card p {
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 850px) {
   /* blog page ---->*/
   .grid_post_card h3 {
@@ -779,7 +765,7 @@ label {
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 700px) {
+@media only screen and (min-width: 300px) and (max-width: 970px) {
   /* blog page ---->*/
   .all_posts,
   .view_posts {
@@ -788,6 +774,7 @@ label {
 
   .grid_post_card h3 {
     font-size: 16px;
+    text-align: center;
   }
 
   .grid_post_card p {
