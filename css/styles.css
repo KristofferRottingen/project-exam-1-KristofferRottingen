@@ -929,8 +929,8 @@ label {
     margin: 0px;
   }
 
-  .grid_post_card h3 {
-    margin-bottom: 2px;
+  .grid_post_card p {
+    padding-bottom: 10px;
   }
 
   .blog_bp {
