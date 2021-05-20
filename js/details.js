@@ -6,6 +6,7 @@ const title = document.querySelector("title");
 const introSection = document.querySelector(".img_intro");
 const ingredientsSection = document.querySelector(".ing_img");
 const htdSection = document.querySelector(".how_to_do");
+const mainImg = document.querySelector(".image");
 
 
 const stars = `<i class="fas fa-star"></i>
@@ -24,7 +25,9 @@ async function getDetails() {
 
         console.log(result);
 
-        title.innerHTML += `${result.acf.title} | FoodBlog`
+        title.innerHTML += `${result.acf.title} | FoodBlog`;
+        
+        // mainImg.innerHTML = `<img id="main_img" src="${result.acf.main_image}" alt="${result.acf.title} image">`;
 
         introSection.innerHTML = `<img id="main_img" src="${result.acf.main_image}" alt="${result.acf.title} image">
         <h1>${result.acf.title}</h1>
@@ -49,6 +52,7 @@ async function getDetails() {
             <li>${result.acf.parg4}</li>
             <li>${result.acf.parg5}</li>
         </ul>`;
+
         
 
         /* Overlay ------> */
