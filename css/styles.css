@@ -358,7 +358,9 @@ input {
   width: 80%;
 }
 
-button {
+.hp_button,
+.button,
+.view_more_btn {
   background-color: var(--yellow);
   width: 150px;
   color: white;
@@ -373,7 +375,9 @@ button {
   transition: all 0.3s;
 }
 
-button:hover {
+.hp_button:hover,
+.button:hover,
+.view_more_btn:hover {
   box-shadow: 0px 0px 10px 2px #000000;
   background-color: var(--green);
   color: white;
@@ -514,6 +518,7 @@ label {
   background-color: var(--yellow);
   color: #fff;
   max-width: 400px;
+  max-height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -845,7 +850,11 @@ label {
 
   /* Contact page*/
   .contact_text img {
-    width: 280px;
+    width: 250px;
+  }
+
+  .contact_text {
+    width: 95%;
   }
 
   .contact_text p {
@@ -896,7 +905,7 @@ label {
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 970px) {
+@media only screen and (min-width: 200px) and (max-width: 970px) {
   /* blog page ---->*/
   .all_posts,
   .view_posts {
@@ -914,4 +923,24 @@ label {
   /* blog page ---->*/
 }
 
+@media (max-width: 460px) {
+  .all_posts,
+  .view_posts {
+    margin: 0px;
+  }
+
+  .blog_bp {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .grid_post_card p {
+    font-size: 12px;
+  }
+
+  .grid_post_card h3 {
+    font-size: 13px;
+  }
+}
 /* media quieres ----> */
