@@ -324,7 +324,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 90vh;
+  height: auto;
 }
 
 .contact_content {
@@ -430,7 +430,7 @@ label {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 90vh;
+  height: auto;
 }
 
 .about_content {
@@ -608,7 +608,7 @@ label {
   font-family: var(--font);
 }
 
-.img_intro img {
+#main_img {
   max-width: 700px;
   width: 100%;
 }
@@ -692,15 +692,17 @@ label {
   top: 0px;
   bottom: 0px;
   display: none;
+  z-index: 1000;
 }
 
-.img_overlay {
+.img_overlay img {
   position: fixed;
   width: auto;
   height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1010;
 }
 /* Overlay -----> */
 
@@ -780,6 +782,35 @@ label {
   /* blog page ---->*/
 }
 
+@media (max-width: 800px) {
+  .contact_content {
+    flex-direction: column;
+  }
+
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #contact_form input {
+    width: 200px;
+  }
+
+  .contact_text {
+    text-align: center;
+  }
+}
+
 @media (max-width: 700px) {
   .ing_img {
     flex-direction: column;
@@ -802,6 +833,21 @@ label {
   .ing_img .recipe_image img {
     max-width: 160px;
   }
+
+  /* Contact page*/
+  .contact_text img {
+    width: 280px;
+  }
+
+  .contact_text p {
+    width: auto;
+    font-size: 14px;
+  }
+
+  #contact_form h1 {
+    font-size: 20px;
+  }
+  /* Contact page*/
 }
 
 @media (max-height: 460px) {

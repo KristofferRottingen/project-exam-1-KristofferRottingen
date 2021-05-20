@@ -26,7 +26,7 @@ async function getDetails() {
 
         title.innerHTML += `${result.acf.title} | FoodBlog`
 
-        introSection.innerHTML = `<img src="${result.acf.main_image}" alt="${result.acf.title} image">
+        introSection.innerHTML = `<img id="main_img" src="${result.acf.main_image}" alt="${result.acf.title} image">
         <h1>${result.acf.title}</h1>
         <div class="stars">${stars}</div>
         <p class="dato">${result.acf.post_dato}</p>
@@ -50,22 +50,37 @@ async function getDetails() {
             <li>${result.acf.parg5}</li>
         </ul>`;
 
-
         /* Overlay ------> */
-        const Overlay = document.querySelector(".modal_overlay");
+        const overlay = document.querySelector(".modal_overlay");
         const imgOverlay = document.querySelector(".img_overlay");
         const image2 = document.querySelector(".recipe_image img")
-        const imgMain = document.querySelector(".img_intro img");
-
-        const images = image2 + imgMain;
-
-        imgOverlay.innerHTML = `<img src="${result.acf}"`
+        const image = document.querySelector("#main_img");
         
+
+        image.addEventListener("click", function() {
+            image.classList.add(".img_overlay");
+            overlay.style.display = "block";
+            imgOverlay.innerHTML += `<img scr="${result.acf.main_image}" alt="${result.acf.title} image">`; 
+            
+            overlay.onclick = function (){
+                image.classList.remove(".img_overlay");
+                overlay.style.display = "none";
+            }
+
+        });
+    
+
+/* Overlay ------> */
+
+
+
 
     } catch(error) {
         console.log(error);
     }
 }
 getDetails();
+
+    
 
 /* Overlay ------> */
