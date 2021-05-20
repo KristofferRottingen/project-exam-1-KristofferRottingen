@@ -839,6 +839,12 @@ label {
   }
 }
 
+@media (max-width: 600px) {
+  .details_bg {
+    padding: 40px 30px;
+  }
+}
+
 @media (max-width: 550px) {
   .fp_heading h1 {
     text-align: center;
@@ -941,6 +947,7 @@ label {
 @media (max-width: 370px) {
   .grid_post_card p {
     font-size: 12px;
+    padding-bottom: 30px;
   }
 
   .grid_post_card h3 {
