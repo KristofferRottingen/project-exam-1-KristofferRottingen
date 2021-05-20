@@ -454,7 +454,8 @@ label {
 }
 
 .info_about img {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .about_text {
@@ -780,6 +781,14 @@ label {
     font-size: 12px;
   }
   /* blog page ---->*/
+
+  /* About page ----> */
+  .info_about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* About page ----> */
 }
 
 @media (max-width: 800px) {
@@ -848,6 +857,25 @@ label {
     font-size: 20px;
   }
   /* Contact page*/
+
+  /* About page ----> */
+  .about_content h1 {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .info_about img {
+    max-width: 250px;
+  }
+
+  .about_text p {
+    font-size: 14px;
+  }
+
+  .about_text {
+    width: 100%;
+  }
+  /* About page ----> */
 }
 
 @media (max-height: 460px) {

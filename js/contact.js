@@ -38,9 +38,7 @@ function formCheck(event) {
 
     if (lengthCheck(fullName.value, 4) && emailCheck(email.value) && lengthCheck(subject.value, 14) && lengthCheck(message.value, 24)) {
         contactFrom.innerHTML = `<div class="message_send"><h2>Your message is sendt!<h2></div>`;
-    } else {
-        
-    }
+    } else {}
 
     console.log("It´s working!");
 
