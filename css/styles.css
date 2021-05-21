@@ -943,6 +943,10 @@ label {
     margin: 0px;
   }
 
+  .grid_post_card h3 {
+    margin-top: 5px;
+  }
+
   .grid_post_card p {
     padding-bottom: 10px;
   }
