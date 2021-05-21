@@ -697,10 +697,21 @@ label {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 75%;
+  max-width: 80%;
   transition: all 0.3s ease;
 }
 
+.overlay_img2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+
+.overlay2,
 .overlay {
   background: rgba(0, 0, 0, 0.555);
   position: fixed;

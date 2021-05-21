@@ -41,6 +41,9 @@ async function getDetails() {
         </div>
         <div class="recipe_image">
             <img id="image2" src="${result.acf.img2}" alt="${result.acf.title} recipe image">
+        </div>
+        <div class="overlay2">
+            <img class="overlay_img2" src="${result.acf.img2}" alt="${result.acf.title} recipe image">
         </div>`;
 
         htdSection.innerHTML = `
@@ -53,36 +56,33 @@ async function getDetails() {
             <li>${result.acf.parg5}</li>
         </ul>`;
 
+        /* Overlay ------> */
+
         const mainImage = document.querySelector("#main_img");
         const overlay = document.querySelector(".overlay");
 
-        mainImage.addEventListener("click", () => {
+        mainImage.addEventListener("click", function () {
             overlay.classList.add("modal");
         });
 
-        
+        overlay.addEventListener("click", function () {
+            overlay.classList.remove("modal");
+        });
+
+        const img2 = document.querySelector("#image2");
+        const overlay2 = document.querySelector(".overlay2");
+
+        img2.addEventListener("click", function () {
+            overlay2.classList.add("modal");
+        });
+
+        overlay2.addEventListener("click", function () {
+            overlay2.classList.remove("modal");
+        });
+
 
         /* Overlay ------> */
-        // const overlay = document.querySelector(".modal_overlay");
-        // const imgOverlay = document.querySelector(".img_overlay");
-        // const image2 = document.querySelector(".recipe_image img")
-        // const image = document.querySelector("#main_img");
         
-
-        // image.addEventListener("click", function() {
-        //     image.classList.add(".img_overlay");
-        //     overlay.style.display = "block";
-        //     imgOverlay.innerHTML += `<img scr="${result.acf.main_image}" alt="${result.acf.title} image">`; 
-            
-        //     overlay.onclick = function (){
-        //         image.classList.remove(".img_overlay");
-        //         overlay.style.display = "none";
-        //     }
-
-        // });
-    
-
-        /* Overlay ------> */
 
 
 
@@ -93,6 +93,4 @@ async function getDetails() {
 }
 getDetails();
 
-    
 
-/* Overlay ------> */
