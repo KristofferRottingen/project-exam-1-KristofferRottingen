@@ -1,4 +1,4 @@
-const url = "https://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts";
+const url = "https://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts?categories=2";
 
 const allPosts = document.querySelector(".all_posts");
 

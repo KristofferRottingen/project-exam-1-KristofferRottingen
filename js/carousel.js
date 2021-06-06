@@ -4,7 +4,7 @@ const sectionTwo = document.querySelector(".sec2");
 const sectionThree = document.querySelector(".sec3");
 const sectionFour = document.querySelector(".sec4");
 
-const url = "https://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts";
+const url = "https://kristoffer-api-exam1.no/Exam/wp-json/wp/v2/posts?categories=2";
 
 
 async function getApi(){
